@@ -50,6 +50,7 @@ public class InitData implements CommandLineRunner {
 
 
         Auditorium auditorium1 = auditoriumRepository.save(new Auditorium(1, 1));
+
         Auditorium auditorium2 = auditoriumRepository.save(new Auditorium(2, 2));
 
 
