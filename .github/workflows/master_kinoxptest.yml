@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - kinoXpTest
+name: Build and deploy JAR app to Azure Web App - KinoXpTest
 
 on:
   push:
@@ -52,15 +52,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7F784B8FABD34F7D827187E810CFD083 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_56D9C57E672946518C80ED36B489E11D }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_8993426A00A24AE9A9FE311314123DDB }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A4D5F0942C114E28A40791B9304B0EEB }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_15870223FE844B5EB724A0D5508D4F45 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_553A6BA230454EF6BA280834F48DC700 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'kinoXpTest'
+          app-name: 'KinoXpTest'
           slot-name: 'Production'
           package: '*.jar'
           
